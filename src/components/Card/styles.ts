@@ -28,9 +28,6 @@ export const Container = styled.div`
       margin-top: 0.625rem;
       padding: 4px 8px;
 
-      /* display: flex; */
-      /* flex-direction: row; */
-
       > p {
         color: ${(props) => props.theme['yellow-dark']};
         font-size: 0.625rem;
@@ -71,15 +68,11 @@ export const Container = styled.div`
     padding: 33px 24px 24px 20px;
     gap: 8px;
 
-    /* width: 208px; */
-
     span {
       font-size: 14px;
       font-weight: 400;
       font-family: 'Roboto', sans-serif;
       color: ${(props) => props.theme['base-title']};
-
-      /* padding-right: 29px; */
 
       > strong {
         font-family: 'Baloo 2', sans-serif;
@@ -99,15 +92,6 @@ export const Container = styled.div`
       color: ${(props) => props.theme['base-button']};
 
       text-align: center;
-
-      &:focus {
-        box-shadow: none;
-        /* border-color: ${(props) => props.theme['green-500']}; */
-      }
-
-      &::placeholder {
-        /* color: ${(props) => props.theme['base-button']}; */
-      }
     }
 
     button {

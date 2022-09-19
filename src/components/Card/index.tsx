@@ -20,7 +20,7 @@ export const Card = ({
   return (
     <Container>
       <header>
-        <img src={image} alt="" />
+        <img src={image} alt="" loading="lazy" />
         {tags.map((item) => (
           <div key={item}>
             <p>{item}</p>
@@ -35,7 +35,7 @@ export const Card = ({
 
       <footer>
         <span>
-          R$ <strong>{price}</strong>
+          R$ <strong>9.99</strong>
         </span>
         <input min={1} type="number" placeholder="1" />
         <button title="add-to-card">

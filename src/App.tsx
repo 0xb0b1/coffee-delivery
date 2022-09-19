@@ -1,22 +1,17 @@
 import { ThemeProvider } from 'styled-components'
-import { DefaultTheme } from './styles/themes/defaultTheme'
 import { GlobalStyle } from './styles/global'
-import { Card } from './components/Card'
+import { BrowserRouter } from 'react-router-dom'
+import { Router } from './Router'
 
-import expresso from './assets/expresso.svg'
+import { DefaultTheme } from './styles/themes/defaultTheme'
 
 function App() {
   return (
     <ThemeProvider theme={DefaultTheme}>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
       <GlobalStyle />
-
-      <Card
-        name="Expresso Tradicional"
-        tags={['tradicional']}
-        image={expresso}
-        price={99}
-        description="O tradicional café feito com água quente e grãos moídos"
-      />
     </ThemeProvider>
   )
 }
