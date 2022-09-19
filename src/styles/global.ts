@@ -6,14 +6,18 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+
 	:focus {
     outline: none;
 		   box-shadow: 0 0 0 2px ${(props) => props.theme.purple};
   }
+
   body {
     background: ${(props) => props.theme.background};
     color: ${(props) => props.theme.white};
     -webkit-font-smoothing: antialiased;
+
+    margin: 4rem;
   }
 	
   body, input, textarea, button {
@@ -21,4 +25,6 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     font-size: 1rem;
   }
+
+  
 `
