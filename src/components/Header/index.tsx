@@ -9,7 +9,7 @@ const Header = () => {
       <img src={logo} alt="" />
 
       <Info>
-        <button type="button">
+        <button className="location-btn" type="button">
           <MapPin size={32} weight="fill" color="#8047F8" />
           <span>Porto Alegre, RS</span>
         </button>

@@ -20,8 +20,10 @@ export const Info = styled.div`
     padding: 8px;
     border-radius: 6px;
 
-    background-color: ${(props) => props.theme['purple-light']};
-    color: ${(props) => props.theme['purple-dark']};
+    &.location-btn {
+      background: ${(props) => props.theme['purple-light']};
+      color: ${(props) => props.theme['purple-dark']};
+    }
 
     &.add-to-cart-btn {
       background: ${(props) => props.theme['yellow-light']};
