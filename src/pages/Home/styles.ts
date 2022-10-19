@@ -2,15 +2,12 @@ import styled from 'styled-components'
 import backgroundImage from '../../assets/Background.svg'
 
 export const Container = styled.div`
-  /* max-width: 70rem; */
   width: 100%;
   margin: 2.5rem auto;
 
   display: flex;
   flex-direction: column;
   gap: 3rem;
-
-  /* padding: 0.15rem; */
 
   h2 {
     font-family: 'Baloo 2', sans-serif;
@@ -27,9 +24,6 @@ export const Intro = styled.div`
   @media (max-width: 1080px) {
     grid-template-columns: auto;
   }
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  /* gap: 2.5rem; */
 
   padding: 1rem 1.5rem;
   background-image: url(${backgroundImage});
@@ -70,8 +64,6 @@ export const Hero = styled.div`
 export const Items = styled.div`
   display: grid;
   grid-template-columns: 1.5fr 1.5fr;
-  /* align-items: center; */
-  /* flex-wrap: wrap; */
   gap: 1.5rem;
 
   span {
@@ -113,20 +105,19 @@ export const Items = styled.div`
   }
 `
 
-export const ProductsContainer = styled.div`
+export const ProductsContainer = styled.section`
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
 
   h2 {
-    /* padding: 0 1rem; */
+    flex: 1;
   }
 `
 
 export const ProductsContent = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 2.5rem 2rem;
 `

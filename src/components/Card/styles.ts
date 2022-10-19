@@ -4,9 +4,10 @@ export const Container = styled.div`
   max-width: 16rem;
   max-height: 19.375rem;
   width: auto;
+  height: auto;
   padding: 0 1rem;
 
-  height: auto;
+  flex: 1 16%;
 
   display: flex;
   align-items: center;

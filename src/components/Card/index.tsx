@@ -35,7 +35,7 @@ export const Card = ({
 
       <footer>
         <span>
-          R$ <strong>9.99</strong>
+          R$ <strong>{price}</strong>
         </span>
         <input min={1} type="number" placeholder="1" />
         <button title="add-to-card">
